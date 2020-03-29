@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7263A7572430B46D00B363FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263A7562430B46D00B363FA /* AppDelegate.swift */; };
 		7263A7592430B46D00B363FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263A7582430B46D00B363FA /* SceneDelegate.swift */; };
-		7263A75B2430B46D00B363FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263A75A2430B46D00B363FA /* ViewController.swift */; };
+		7263A75B2430B46D00B363FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263A75A2430B46D00B363FA /* MainViewController.swift */; };
 		7263A75E2430B46D00B363FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7263A75C2430B46D00B363FA /* Main.storyboard */; };
 		7263A7602430B46D00B363FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7263A75F2430B46D00B363FA /* Assets.xcassets */; };
 		7263A7632430B46D00B363FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7263A7612430B46D00B363FA /* LaunchScreen.storyboard */; };
@@ -27,6 +27,8 @@
 		7263A7802430C99500B363FA /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7792430C99500B363FA /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7263A7812430C99500B363FA /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */; };
 		7263A7822430C99500B363FA /* FBSDKPlacesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72A1DF482430E95D0014C7A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1DF472430E95D0014C7A5 /* LoginViewController.swift */; };
+		72A1DF4A2430F5900014C7A5 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1DF492430F5900014C7A5 /* SharingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,7 +55,7 @@
 		7263A7532430B46D00B363FA /* PhotoSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7263A7562430B46D00B363FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7263A7582430B46D00B363FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7263A75A2430B46D00B363FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7263A75A2430B46D00B363FA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7263A75D2430B46D00B363FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7263A75F2430B46D00B363FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7263A7622430B46D00B363FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,8 @@
 		7263A7782430C99500B363FA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7263A7792430C99500B363FA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = Carthage/Build/iOS/FBSDKPlacesKit.framework; sourceTree = "<group>"; };
+		72A1DF472430E95D0014C7A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		72A1DF492430F5900014C7A5 /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,9 @@
 		7263A7552430B46D00B363FA /* PhotoSharing */ = {
 			isa = PBXGroup;
 			children = (
+				72A1DF462430E9260014C7A5 /* Controllers */,
 				7263A7562430B46D00B363FA /* AppDelegate.swift */,
 				7263A7582430B46D00B363FA /* SceneDelegate.swift */,
-				7263A75A2430B46D00B363FA /* ViewController.swift */,
 				7263A75C2430B46D00B363FA /* Main.storyboard */,
 				7263A75F2430B46D00B363FA /* Assets.xcassets */,
 				7263A7612430B46D00B363FA /* LaunchScreen.storyboard */,
@@ -128,6 +132,16 @@
 				7263A76C2430C7A400B363FA /* FacebookShare.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72A1DF462430E9260014C7A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7263A75A2430B46D00B363FA /* MainViewController.swift */,
+				72A1DF472430E95D0014C7A5 /* LoginViewController.swift */,
+				72A1DF492430F5900014C7A5 /* SharingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7263A75B2430B46D00B363FA /* ViewController.swift in Sources */,
+				72A1DF482430E95D0014C7A5 /* LoginViewController.swift in Sources */,
+				7263A75B2430B46D00B363FA /* MainViewController.swift in Sources */,
 				7263A7572430B46D00B363FA /* AppDelegate.swift in Sources */,
 				7263A7592430B46D00B363FA /* SceneDelegate.swift in Sources */,
+				72A1DF4A2430F5900014C7A5 /* SharingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

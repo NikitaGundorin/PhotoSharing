@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  PhotoSharing
 //
 //  Created by Никита Гундорин on 29.03.2020.
@@ -9,17 +9,13 @@
 import UIKit
 import FacebookLogin
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let loginButton = FBLoginButton(permissions: [ .publicProfile ])
         loginButton.center = view.center
-
+        
         view.addSubview(loginButton)
     }
-
-
 }
-
