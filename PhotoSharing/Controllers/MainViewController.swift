@@ -7,38 +7,34 @@
 //
 
 import UIKit
-
 import FacebookShare
-import Social
 
 class MainViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
+    @IBOutlet weak var imageView: UIImageView!
     var image: UIImage? {
         didSet {
-            guard let image = image else {
+            guard image != nil else {
                 return
             }
-            imageView.image = image
-            let content = SharePhotoContent()
-            content.photos = [SharePhoto(image: image, userGenerated: true)]
-            self.shareButton.shareContent = content
+            self.navigationItem.rightBarButtonItem?.isEnabled = true;
         }
     }
-    
-    let shareButton = FBShareButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        shareButton.center = CGPoint(x: 171, y: 600)
-
-        view.addSubview(shareButton)
     }
     
-    @IBOutlet weak var imageView: UIImageView!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "save") {
+            let dvc = segue.destination as? SharingViewController
+            dvc?.image = image
+        }
+    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         self.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        imageView.image = image
         dismiss(animated: true, completion: nil)
     }
     

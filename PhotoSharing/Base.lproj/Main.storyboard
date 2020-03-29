@@ -68,9 +68,9 @@
                                 </segue>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save and Share" style="plain" id="sPW-wg-8gW">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Save and Share" style="plain" id="sPW-wg-8gW">
                             <connections>
-                                <segue destination="5bv-Up-DAd" kind="show" id="3Wb-bt-OLK"/>
+                                <segue destination="5bv-Up-DAd" kind="show" identifier="save" id="3Wb-bt-OLK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -85,7 +85,7 @@
         <!--Save and Share-->
         <scene sceneID="Cp4-xd-7XN">
             <objects>
-                <viewController id="5bv-Up-DAd" sceneMemberID="viewController">
+                <viewController id="5bv-Up-DAd" customClass="SharingViewController" customModule="PhotoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJY-qa-VFm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
