@@ -13,7 +13,41 @@
 		7263A75E2430B46D00B363FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7263A75C2430B46D00B363FA /* Main.storyboard */; };
 		7263A7602430B46D00B363FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7263A75F2430B46D00B363FA /* Assets.xcassets */; };
 		7263A7632430B46D00B363FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7263A7612430B46D00B363FA /* LaunchScreen.storyboard */; };
+		7263A76F2430C7A400B363FA /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A76C2430C7A400B363FA /* FacebookShare.framework */; };
+		7263A7702430C7A400B363FA /* FacebookShare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A76C2430C7A400B363FA /* FacebookShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7263A7712430C7A400B363FA /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A76D2430C7A400B363FA /* FacebookCore.framework */; };
+		7263A7722430C7A400B363FA /* FacebookCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A76D2430C7A400B363FA /* FacebookCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7263A7732430C7A400B363FA /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A76E2430C7A400B363FA /* FacebookLogin.framework */; };
+		7263A7742430C7A400B363FA /* FacebookLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A76E2430C7A400B363FA /* FacebookLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7263A77B2430C99500B363FA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7772430C99500B363FA /* FBSDKLoginKit.framework */; };
+		7263A77C2430C99500B363FA /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7772430C99500B363FA /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7263A77D2430C99500B363FA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7782430C99500B363FA /* FBSDKCoreKit.framework */; };
+		7263A77E2430C99500B363FA /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7782430C99500B363FA /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7263A77F2430C99500B363FA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7792430C99500B363FA /* FBSDKShareKit.framework */; };
+		7263A7802430C99500B363FA /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7792430C99500B363FA /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7263A7812430C99500B363FA /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */; };
+		7263A7822430C99500B363FA /* FBSDKPlacesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7263A7752430C7A500B363FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7263A77E2430C99500B363FA /* FBSDKCoreKit.framework in Embed Frameworks */,
+				7263A7702430C7A400B363FA /* FacebookShare.framework in Embed Frameworks */,
+				7263A7802430C99500B363FA /* FBSDKShareKit.framework in Embed Frameworks */,
+				7263A7742430C7A400B363FA /* FacebookLogin.framework in Embed Frameworks */,
+				7263A7822430C99500B363FA /* FBSDKPlacesKit.framework in Embed Frameworks */,
+				7263A77C2430C99500B363FA /* FBSDKLoginKit.framework in Embed Frameworks */,
+				7263A7722430C7A400B363FA /* FacebookCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7263A7532430B46D00B363FA /* PhotoSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +58,13 @@
 		7263A75F2430B46D00B363FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7263A7622430B46D00B363FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7263A7642430B46D00B363FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7263A76C2430C7A400B363FA /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = Carthage/Build/iOS/FacebookShare.framework; sourceTree = "<group>"; };
+		7263A76D2430C7A400B363FA /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		7263A76E2430C7A400B363FA /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = "<group>"; };
+		7263A7772430C99500B363FA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7263A7782430C99500B363FA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7263A7792430C99500B363FA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = Carthage/Build/iOS/FBSDKPlacesKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +72,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7263A77D2430C99500B363FA /* FBSDKCoreKit.framework in Frameworks */,
+				7263A76F2430C7A400B363FA /* FacebookShare.framework in Frameworks */,
+				7263A77F2430C99500B363FA /* FBSDKShareKit.framework in Frameworks */,
+				7263A7732430C7A400B363FA /* FacebookLogin.framework in Frameworks */,
+				7263A7812430C99500B363FA /* FBSDKPlacesKit.framework in Frameworks */,
+				7263A77B2430C99500B363FA /* FBSDKLoginKit.framework in Frameworks */,
+				7263A7712430C7A400B363FA /* FacebookCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +90,7 @@
 			children = (
 				7263A7552430B46D00B363FA /* PhotoSharing */,
 				7263A7542430B46D00B363FA /* Products */,
+				7263A76B2430C7A400B363FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +116,20 @@
 			path = PhotoSharing;
 			sourceTree = "<group>";
 		};
+		7263A76B2430C7A400B363FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7263A7782430C99500B363FA /* FBSDKCoreKit.framework */,
+				7263A7772430C99500B363FA /* FBSDKLoginKit.framework */,
+				7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */,
+				7263A7792430C99500B363FA /* FBSDKShareKit.framework */,
+				7263A76D2430C7A400B363FA /* FacebookCore.framework */,
+				7263A76E2430C7A400B363FA /* FacebookLogin.framework */,
+				7263A76C2430C7A400B363FA /* FacebookShare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +140,8 @@
 				7263A74F2430B46D00B363FA /* Sources */,
 				7263A7502430B46D00B363FA /* Frameworks */,
 				7263A7512430B46D00B363FA /* Resources */,
+				7263A7752430C7A500B363FA /* Embed Frameworks */,
+				7263A7762430C85000B363FA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +197,33 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7263A7762430C85000B363FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookLogin.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookShare.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKLoginKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKPlacesKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKShareKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7263A74F2430B46D00B363FA /* Sources */ = {
@@ -286,6 +378,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6696YN386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PhotoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +400,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6696YN386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PhotoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
