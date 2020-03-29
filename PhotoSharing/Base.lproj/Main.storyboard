@@ -14,14 +14,26 @@
                     <view key="view" contentMode="scaleToFill" id="e6F-tR-C1t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-Vb-F9Q">
+                                <rect key="frame" x="20" y="321" width="374" height="200"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pWT-Vb-F9Q" firstAttribute="centerX" secondItem="e6F-tR-C1t" secondAttribute="centerX" id="60Z-WI-pSz"/>
+                            <constraint firstItem="pWT-Vb-F9Q" firstAttribute="centerY" secondItem="e6F-tR-C1t" secondAttribute="centerY" id="HAa-mm-iIE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="osi-7V-Fib"/>
                     </view>
                     <navigationItem key="navigationItem" id="YHx-lO-vUA"/>
+                    <connections>
+                        <outlet property="stackView" destination="pWT-Vb-F9Q" id="D6E-go-VU6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZg-Gl-wIx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1916" y="-554"/>
+            <point key="canvasLocation" x="1915.9420289855075" y="-554.46428571428567"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
