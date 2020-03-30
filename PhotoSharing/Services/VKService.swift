@@ -29,7 +29,6 @@ final class VKService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     override init() {
         vkSdk = VKSdk.initialize(withAppId: appId)
         super.init()
-        print("VKSdk.initialize")
         vkSdk.register(self)
         vkSdk.uiDelegate = self
         wakeUpSession(withLogin: false)
@@ -40,10 +39,8 @@ final class VKService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
         
         VKSdk.wakeUpSession(scope) { [delegate] (state, error) in
             if state == VKAuthorizationState.authorized {
-                print("VKAuthorizationState.authorized")
                 delegate?.authVKServiceSignIn()
             } else if (state == VKAuthorizationState.initialized && withLogin) {
-                print("VKAuthorizationState.initialized")
                 VKSdk.authorize(scope)
             } else {
                 print("Auth problems, state \(state) error \(String(describing: error))")
@@ -65,6 +62,7 @@ final class VKService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     }
     
     func vkSdkUserAuthorizationFailed() {
+        delegate?.authVKServiceDidSignInFail()
         print("vkSdkUserAuthorizationFailed")
     }
     

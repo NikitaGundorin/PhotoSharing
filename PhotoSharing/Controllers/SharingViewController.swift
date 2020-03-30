@@ -48,7 +48,8 @@ class SharingViewController: UIViewController {
             vkShareButton.isEnabled = false
             return
         }
-        var vkShareDialog = VKShareDialogController()
+        
+        let vkShareDialog = VKShareDialogController()
         vkShareDialog.uploadImages = [image]
         vkShareDialog.dismissAutomatically = true
         self.present(vkShareDialog, animated: true)

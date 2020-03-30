@@ -26,9 +26,21 @@
 		7263A7802430C99500B363FA /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A7792430C99500B363FA /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7263A7812430C99500B363FA /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */; };
 		7263A7822430C99500B363FA /* FBSDKPlacesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7276407C24325E230092BE3A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A812432521100AA7425 /* LocalAuthentication.framework */; };
+		7276407E24325E240092BE3A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A832432521900AA7425 /* SafariServices.framework */; };
+		7276408024325E270092BE3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A872432522600AA7425 /* SystemConfiguration.framework */; };
+		7276408224325E2A0092BE3A /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A852432521E00AA7425 /* AuthenticationServices.framework */; };
+		7276408E243261200092BE3A /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7276408B2432611F0092BE3A /* GoogleSignIn.bundle */; };
+		7276408F243261200092BE3A /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7276408C243261200092BE3A /* GoogleSignIn.framework */; };
+		72764090243261200092BE3A /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7276408D243261200092BE3A /* GoogleSignInDependencies.framework */; };
 		72985A362431080600AA7425 /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A352431080600AA7425 /* VKSdkFramework.framework */; };
 		72985A372431080600AA7425 /* VKSdkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A352431080600AA7425 /* VKSdkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72985A7A24320A7F00AA7425 /* VKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72985A7924320A7F00AA7425 /* VKService.swift */; };
+		72985A7D2432367800AA7425 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A7C2432367800AA7425 /* SwifteriOS.framework */; };
+		72985A7E2432367800AA7425 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A7C2432367800AA7425 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72985A8A243258D000AA7425 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72985A89243258D000AA7425 /* GoogleService.swift */; };
+		72985A8D243259D100AA7425 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A8B243259D100AA7425 /* GoogleSignIn.framework */; };
+		72985A8F243259D100AA7425 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A8C243259D100AA7425 /* GoogleSignInDependencies.framework */; };
 		72A1DF482430E95D0014C7A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1DF472430E95D0014C7A5 /* LoginViewController.swift */; };
 		72A1DF4A2430F5900014C7A5 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1DF492430F5900014C7A5 /* SharingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +57,7 @@
 				7263A7802430C99500B363FA /* FBSDKShareKit.framework in Embed Frameworks */,
 				7263A7742430C7A400B363FA /* FacebookLogin.framework in Embed Frameworks */,
 				7263A7822430C99500B363FA /* FBSDKPlacesKit.framework in Embed Frameworks */,
+				72985A7E2432367800AA7425 /* SwifteriOS.framework in Embed Frameworks */,
 				72985A372431080600AA7425 /* VKSdkFramework.framework in Embed Frameworks */,
 				7263A77C2430C99500B363FA /* FBSDKLoginKit.framework in Embed Frameworks */,
 				7263A7722430C7A400B363FA /* FacebookCore.framework in Embed Frameworks */,
@@ -69,8 +82,19 @@
 		7263A7782430C99500B363FA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7263A7792430C99500B363FA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = Carthage/Build/iOS/FBSDKPlacesKit.framework; sourceTree = "<group>"; };
+		7276408B2432611F0092BE3A /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		7276408C243261200092BE3A /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		7276408D243261200092BE3A /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = "../../../../Downloads/google_signin_sdk_5_0_2 2/GoogleSignInDependencies.framework"; sourceTree = "<group>"; };
 		72985A352431080600AA7425 /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
 		72985A7924320A7F00AA7425 /* VKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKService.swift; sourceTree = "<group>"; };
+		72985A7C2432367800AA7425 /* SwifteriOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifteriOS.framework; path = Carthage/Build/iOS/SwifteriOS.framework; sourceTree = "<group>"; };
+		72985A812432521100AA7425 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		72985A832432521900AA7425 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		72985A852432521E00AA7425 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		72985A872432522600AA7425 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		72985A89243258D000AA7425 /* GoogleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
+		72985A8B243259D100AA7425 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = GoogleSignInFrameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		72985A8C243259D100AA7425 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = GoogleSignInFrameworks/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		72A1DF472430E95D0014C7A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		72A1DF492430F5900014C7A5 /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,14 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7276408024325E270092BE3A /* SystemConfiguration.framework in Frameworks */,
+				72985A8F243259D100AA7425 /* GoogleSignInDependencies.framework in Frameworks */,
 				7263A77D2430C99500B363FA /* FBSDKCoreKit.framework in Frameworks */,
 				7263A76F2430C7A400B363FA /* FacebookShare.framework in Frameworks */,
 				7263A77F2430C99500B363FA /* FBSDKShareKit.framework in Frameworks */,
+				72764090243261200092BE3A /* GoogleSignInDependencies.framework in Frameworks */,
+				72985A8D243259D100AA7425 /* GoogleSignIn.framework in Frameworks */,
+				7276408224325E2A0092BE3A /* AuthenticationServices.framework in Frameworks */,
+				7276408F243261200092BE3A /* GoogleSignIn.framework in Frameworks */,
 				7263A7732430C7A400B363FA /* FacebookLogin.framework in Frameworks */,
 				7263A7812430C99500B363FA /* FBSDKPlacesKit.framework in Frameworks */,
+				72985A7D2432367800AA7425 /* SwifteriOS.framework in Frameworks */,
 				72985A362431080600AA7425 /* VKSdkFramework.framework in Frameworks */,
 				7263A77B2430C99500B363FA /* FBSDKLoginKit.framework in Frameworks */,
+				7276407C24325E230092BE3A /* LocalAuthentication.framework in Frameworks */,
 				7263A7712430C7A400B363FA /* FacebookCore.framework in Frameworks */,
+				7276407E24325E240092BE3A /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +130,7 @@
 		7263A74A2430B46D00B363FA = {
 			isa = PBXGroup;
 			children = (
+				72764087243260BD0092BE3A /* GoogleSignInFrameworks */,
 				7263A7552430B46D00B363FA /* PhotoSharing */,
 				7263A7542430B46D00B363FA /* Products */,
 				7263A76B2430C7A400B363FA /* Frameworks */,
@@ -128,6 +162,13 @@
 		7263A76B2430C7A400B363FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72985A8B243259D100AA7425 /* GoogleSignIn.framework */,
+				72985A8C243259D100AA7425 /* GoogleSignInDependencies.framework */,
+				72985A872432522600AA7425 /* SystemConfiguration.framework */,
+				72985A852432521E00AA7425 /* AuthenticationServices.framework */,
+				72985A832432521900AA7425 /* SafariServices.framework */,
+				72985A812432521100AA7425 /* LocalAuthentication.framework */,
+				72985A7C2432367800AA7425 /* SwifteriOS.framework */,
 				72985A352431080600AA7425 /* VKSdkFramework.framework */,
 				7263A7782430C99500B363FA /* FBSDKCoreKit.framework */,
 				7263A7772430C99500B363FA /* FBSDKLoginKit.framework */,
@@ -140,10 +181,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		72764087243260BD0092BE3A /* GoogleSignInFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7276408B2432611F0092BE3A /* GoogleSignIn.bundle */,
+				7276408C243261200092BE3A /* GoogleSignIn.framework */,
+				7276408D243261200092BE3A /* GoogleSignInDependencies.framework */,
+			);
+			path = GoogleSignInFrameworks;
+			sourceTree = "<group>";
+		};
 		72985A7B24320A8300AA7425 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				72985A7924320A7F00AA7425 /* VKService.swift */,
+				72985A89243258D000AA7425 /* GoogleService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -218,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7276408E243261200092BE3A /* GoogleSignIn.bundle in Resources */,
 				7263A7632430B46D00B363FA /* LaunchScreen.storyboard in Resources */,
 				7263A7602430B46D00B363FA /* Assets.xcassets in Resources */,
 				7263A75E2430B46D00B363FA /* Main.storyboard in Resources */,
@@ -243,6 +296,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/FBSDKPlacesKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FBSDKShareKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/VKSdkFramework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwifteriOS.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -261,6 +315,7 @@
 			files = (
 				72A1DF482430E95D0014C7A5 /* LoginViewController.swift in Sources */,
 				7263A75B2430B46D00B363FA /* MainViewController.swift in Sources */,
+				72985A8A243258D000AA7425 /* GoogleService.swift in Sources */,
 				7263A7572430B46D00B363FA /* AppDelegate.swift in Sources */,
 				72A1DF4A2430F5900014C7A5 /* SharingViewController.swift in Sources */,
 				72985A7A24320A7F00AA7425 /* VKService.swift in Sources */,
@@ -343,6 +398,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -396,6 +455,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -412,6 +475,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/GoogleSignInFrameworks",
 				);
 				INFOPLIST_FILE = PhotoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,6 +498,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/GoogleSignInFrameworks",
 				);
 				INFOPLIST_FILE = PhotoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

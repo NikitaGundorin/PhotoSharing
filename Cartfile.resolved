@@ -1,3 +1,5 @@
+github "NikitaGundorin/Google-SignIn-SDK" "e7652923279071ad87d418b79b3bb8f35c5b17b6"
 github "VKCOM/vk-ios-sdk" "1.5.1"
 github "facebook/facebook-objc-sdk" "v5.15.1"
 github "facebook/facebook-swift-sdk" "v0.9.0"
+github "mattdonnelly/Swifter" "2.3.0"

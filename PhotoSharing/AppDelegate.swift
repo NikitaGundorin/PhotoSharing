@@ -9,11 +9,13 @@
 import UIKit
 import FacebookCore
 import VKSdkFramework
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, VKServiceDelegate {
     var window: UIWindow?
     var vkService: VKService!
+    var googleService: GoogleService!
     
     static func shared() -> AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
@@ -23,14 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, VKServiceDelegate {
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         self.vkService = VKService()
+        self.googleService = GoogleService()
         
         window = UIWindow()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        let authVC = storyboard.instantiateInitialViewController()
+        let vc = storyboard.instantiateInitialViewController()
         
-        window?.rootViewController = authVC
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
     
         return true
@@ -39,6 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, VKServiceDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         ApplicationDelegate.shared.application(app, open: url, options: options)
         VKSdk.processOpen(url, fromApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String)
+        GIDSignIn.sharedInstance().handle(url)
         return true
     }
     
