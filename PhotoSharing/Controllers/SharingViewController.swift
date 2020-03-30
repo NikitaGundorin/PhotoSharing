@@ -8,8 +8,10 @@
 
 import UIKit
 import FacebookShare
+import VKSdkFramework
 
 class SharingViewController: UIViewController {
+    @IBOutlet weak var stackView: UIStackView!
     var image: UIImage? {
         didSet {
             guard let image = image else {
@@ -17,17 +19,38 @@ class SharingViewController: UIViewController {
             }
             let content = SharePhotoContent()
             content.photos = [SharePhoto(image: image, userGenerated: true)]
-            shareButton.shareContent = content
+            fbShareButton.shareContent = content
         }
     }
     
-    let shareButton = FBShareButton()
+    let fbShareButton = FBShareButton()
+    let vkShareButton = UIButton(type: .system)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpVkShareButton()
 
-        shareButton.center = view.center
-
-        view.addSubview(shareButton)
+        stackView.addArrangedSubview(fbShareButton)
+        stackView.addArrangedSubview(vkShareButton)
+    }
+    
+    func setUpVkShareButton() {
+        let vkService = AppDelegate.shared().vkService
+        if (vkService?.token == nil) {
+            vkShareButton.isEnabled = false
+        }
+        vkShareButton.setTitle("Share in VK", for: .normal)
+        vkShareButton.addTarget(self, action: #selector(self.vkShareButtonPressed(sender:)), for: .touchUpInside)
+    }
+    
+    @objc func vkShareButtonPressed(sender: UIButton) {
+        guard let image = image else {
+            vkShareButton.isEnabled = false
+            return
+        }
+        var vkShareDialog = VKShareDialogController()
+        vkShareDialog.uploadImages = [image]
+        vkShareDialog.dismissAutomatically = true
+        self.present(vkShareDialog, animated: true)
     }
 }

@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-Vb-F9Q">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-Vb-F9Q">
                                 <rect key="frame" x="20" y="321" width="374" height="200"/>
                             </stackView>
                         </subviews>
@@ -101,10 +101,22 @@
                     <view key="view" contentMode="scaleToFill" id="tJY-qa-VFm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GB2-SP-VKs">
+                                <rect key="frame" x="152" y="348" width="110" height="200"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GB2-SP-VKs" firstAttribute="centerX" secondItem="tJY-qa-VFm" secondAttribute="centerX" id="3Al-4k-LQv"/>
+                            <constraint firstItem="GB2-SP-VKs" firstAttribute="centerY" secondItem="tJY-qa-VFm" secondAttribute="centerY" id="6TW-gy-OO3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ktc-w7-bNK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Save and Share" id="UuU-WT-uFM"/>
+                    <connections>
+                        <outlet property="stackView" destination="GB2-SP-VKs" id="TNh-zq-4uM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZd-Kh-Qav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

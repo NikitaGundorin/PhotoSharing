@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7263A7572430B46D00B363FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263A7562430B46D00B363FA /* AppDelegate.swift */; };
-		7263A7592430B46D00B363FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263A7582430B46D00B363FA /* SceneDelegate.swift */; };
 		7263A75B2430B46D00B363FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263A75A2430B46D00B363FA /* MainViewController.swift */; };
 		7263A75E2430B46D00B363FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7263A75C2430B46D00B363FA /* Main.storyboard */; };
 		7263A7602430B46D00B363FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7263A75F2430B46D00B363FA /* Assets.xcassets */; };
@@ -29,6 +28,7 @@
 		7263A7822430C99500B363FA /* FBSDKPlacesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		72985A362431080600AA7425 /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A352431080600AA7425 /* VKSdkFramework.framework */; };
 		72985A372431080600AA7425 /* VKSdkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72985A352431080600AA7425 /* VKSdkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72985A7A24320A7F00AA7425 /* VKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72985A7924320A7F00AA7425 /* VKService.swift */; };
 		72A1DF482430E95D0014C7A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1DF472430E95D0014C7A5 /* LoginViewController.swift */; };
 		72A1DF4A2430F5900014C7A5 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1DF492430F5900014C7A5 /* SharingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,6 @@
 /* Begin PBXFileReference section */
 		7263A7532430B46D00B363FA /* PhotoSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7263A7562430B46D00B363FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7263A7582430B46D00B363FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7263A75A2430B46D00B363FA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7263A75D2430B46D00B363FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7263A75F2430B46D00B363FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		7263A7792430C99500B363FA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7263A77A2430C99500B363FA /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = Carthage/Build/iOS/FBSDKPlacesKit.framework; sourceTree = "<group>"; };
 		72985A352431080600AA7425 /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
+		72985A7924320A7F00AA7425 /* VKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKService.swift; sourceTree = "<group>"; };
 		72A1DF472430E95D0014C7A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		72A1DF492430F5900014C7A5 /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,10 +114,9 @@
 		7263A7552430B46D00B363FA /* PhotoSharing */ = {
 			isa = PBXGroup;
 			children = (
-				72985A3824311CC400AA7425 /* Services */,
+				72985A7B24320A8300AA7425 /* Services */,
 				72A1DF462430E9260014C7A5 /* Controllers */,
 				7263A7562430B46D00B363FA /* AppDelegate.swift */,
-				7263A7582430B46D00B363FA /* SceneDelegate.swift */,
 				7263A75C2430B46D00B363FA /* Main.storyboard */,
 				7263A75F2430B46D00B363FA /* Assets.xcassets */,
 				7263A7612430B46D00B363FA /* LaunchScreen.storyboard */,
@@ -141,9 +140,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		72985A3824311CC400AA7425 /* Services */ = {
+		72985A7B24320A8300AA7425 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				72985A7924320A7F00AA7425 /* VKService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -262,8 +262,8 @@
 				72A1DF482430E95D0014C7A5 /* LoginViewController.swift in Sources */,
 				7263A75B2430B46D00B363FA /* MainViewController.swift in Sources */,
 				7263A7572430B46D00B363FA /* AppDelegate.swift in Sources */,
-				7263A7592430B46D00B363FA /* SceneDelegate.swift in Sources */,
 				72A1DF4A2430F5900014C7A5 /* SharingViewController.swift in Sources */,
+				72985A7A24320A7F00AA7425 /* VKService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
